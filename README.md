@@ -7,7 +7,7 @@
 
 An end-to-end exploratory data analysis (EDA) and interactive business intelligence dashboard built to investigate subscription churn drivers, segment customer risk profiles, and generate actionable retention strategies across **505,206 customer records**.
 
-🔗 **Live Interactive Dashboard:** [Launch Streamlit App]([MASUKKAN_LINK_STREAMLIT_APP_KAMU])
+🔗 **Live Interactive Dashboard:** [Launch Streamlit App](https://customer-churn-investigation101.streamlit.app/)
 
 ---
 
