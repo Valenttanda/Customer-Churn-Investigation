@@ -1,3 +1,4 @@
+from pathlib import Path
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -31,8 +32,10 @@ st.markdown("""
 @st.cache_data
 def load_data():
   # Load the cleaned and merged dataset
-  df = pd.read_csv('dashboard\customer_churn_dataset-EDA.csv')
-
+  current_dir = Path(__file__).parent
+  file_path = current_dir / "customer_churn_dataset-EDA.csv"
+  df = pd.read_csv(file_path)
+  
   # Feature Engineering: Create a new column for churn status
   df['Churn Status'] = np.where(df['Churn'] == 1, 'Churned', 'Retained')
 
