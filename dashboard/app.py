@@ -31,7 +31,7 @@ st.markdown("""
 @st.cache_data
 def load_data():
   # Load the cleaned and merged dataset
-  df = pd.read_csv('customer_churn_dataset-EDA.csv')
+  df = pd.read_csv('dashboard\customer_churn_dataset-EDA.csv')
 
   # Feature Engineering: Create a new column for churn status
   df['Churn Status'] = np.where(df['Churn'] == 1, 'Churned', 'Retained')
